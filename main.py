@@ -49,7 +49,6 @@ def text_to_pdf(text):
 
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-# OPENROUTER_API_KEY="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"
 
 class IdeaModel(BaseModel):
     name: str
@@ -60,7 +59,6 @@ class IdeaModel(BaseModel):
     sdgs: List[str]
 
 class ChatRequest(BaseModel):
-    # name: str
     idea: IdeaModel
 
 # class ChatRequest(BaseModel):
